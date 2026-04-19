@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Molecule Builder</title>
+<style>
+  body { margin: 0; overflow: hidden; background: black; }
+  canvas { display: block; }
+
+  #ui {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+  }
+
+  button {
+    padding: 8px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div id="ui">
+  <button onclick="buildMolecule('H2O')">H₂O</button>
+  <button onclick="buildMolecule('CO2')">CO₂</button>
+  <button onclick="buildMolecule('CH4')">CH₄</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+
+<script src="src/third.js"></script>
+
+</body>
+</html>

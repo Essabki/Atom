@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>3D Atom Builder</title>
+<style>
+  body { margin: 0; overflow: hidden; background: black; }
+  canvas { display: block; }
+
+  button {
+    padding: 4px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+
+  #ui {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 40px);
+    gap: 5px;
+    z-index: 10;
+  }
+</style>
+</head>
+<body>
+
+<div id="ui"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+
+<script src="src/second.js"></script>
+
+</body>
+</html>
